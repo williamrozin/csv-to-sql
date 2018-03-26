@@ -1,0 +1,15 @@
+{
+  "name": "csv-to-sql",
+  "version": "0.1.0",
+  "description": "Converts an CSV to a SQL script",
+  "author": "William Rozin Gaspar <williamrozingaspar@gmail.com>",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "minimist": "1.2.0",
+    "papaparse": "4.3.7"
+  }
+}
