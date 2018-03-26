@@ -8,7 +8,9 @@ Converts an CSV to a SQL script
 Simply clone this repo and run `yarn`
 
 > git clone https://github.com/williamrozin/csv-to-sql.git
+
 > cd csv-to-sql
+
 > yarn
 
 
