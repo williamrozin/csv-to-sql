@@ -7,7 +7,7 @@ const OUTPUT_FILE = argv.output || 'schema.sql'
 const TABLE_NAME = argv.table || 'results'
 
 const coerceType = item => `'${item.toString().replace(/'/g, '')}'`
-const createTable = fields => `CREATE TABLE ${TABLE_NAME} (\n${ fields.map(field => `    ${field} TEXT`).join(',\n') }\n)`
+const createTable = fields => `CREATE TABLE ${TABLE_NAME} (\n${ fields.map(field => `    ${field} VARCHAR(MAX)`).join(',\n') }\n)`
 const createInsert = values => `INSERT INTO ${TABLE_NAME} VALUES (${values.map(coerceType)})`
 
 fs.readFile(INPUT_FILE,  'utf8', (err, data) => {
