@@ -1,3 +1,6 @@
 *.csv
 *.sql
+*.zip
 node_modules/
+output/
+yarn-error.log
